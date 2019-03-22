@@ -18,11 +18,20 @@ namespace Classes.Tests
         [TestMethod]
         public void CanPopOffMultipleItems()
         {
-            var stack = new MyGenericStack<string>();
-            stack.Push("foo");
-            stack.Push("bar");
+            var stack = new MyGenericStack<string>()
+            .Push("foo")
+            .Push("bar");
+            
             Assert.AreEqual("bar", stack.Pop());
             Assert.AreEqual("foo", stack.Pop());
         }
+        
+        [TestMethod]
+        public void CanPopFromEmptyStack()
+        {
+            var stack = new MyGenericStack<string>();
+            Assert.AreEqual(null, stack.Pop());
+        }
+        
     }
 }
