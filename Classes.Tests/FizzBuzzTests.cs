@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using FizzBuzz.Library;
+using Classes.Library;
 
-namespace FizzBuzz.Tests
+namespace Classes.Tests
 {
     [TestClass]
     public class FizzBuzzTests
