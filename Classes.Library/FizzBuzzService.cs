@@ -1,4 +1,4 @@
-namespace FizzBuzz.Library
+namespace Classes.Library
 {
     public class FizzBuzzService
     {
